@@ -4,6 +4,7 @@
 Postgres configuration
 
 ```json
+# Paste in application.properties
 spring.application.name=employee-dms
 server.port=8888
 
