@@ -12,10 +12,10 @@ server.port=8888
 spring.datasource.url=jdbc:postgresql://localhost:5454/postgres
 spring.datasource.username=postgres
 spring.datasource.password=postgres
+spring.jpa.hibernate.ddl-auto=update
 
 # Define specific driver to make it faster otherwise it will search default by going through entire
-spring.datasource.driver-class-name=org.postgresql.Driver
-
+# spring.datasource.driver-class-name=org.postgresql.Driver
 ## Not required to use it explicitly
 # spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
 
