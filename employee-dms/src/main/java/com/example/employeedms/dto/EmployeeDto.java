@@ -1,2 +1,19 @@
-package com.example.employeedms.dto;public class EmployeeDto {
+package com.example.employeedms.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class EmployeeDto {
+    private Long id;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private Number phone;
+    private String role;
 }
