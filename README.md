@@ -3,7 +3,8 @@
 
 Postgres configuration
 
-```json
+```js
+
 # Paste in application.properties
 spring.application.name=employee-dms
 server.port=8888
@@ -24,6 +25,8 @@ spring.jpa.hibernate.ddl-auto=update
 
 Run command to start postgres using docker
 
-```json
+```js
+
 docker run --name employee-dms -p 5454:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
 ```
