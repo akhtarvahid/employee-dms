@@ -19,4 +19,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return EmployeeMapper.mapToEmployeeDto(savedEmp);
     }
+
+    @Override
+    public EmployeeDto getEmployeeById(Long id) {
+        return EmployeeMapper.mapToEmployeeDto(employeeRepository.findById(id).orElse(null));
+    }
 }
